@@ -1,0 +1,9 @@
+tk
+opencv-python
+numpy
+Pillow
+matplotlib
+pandas
+scipy
+bottleneck
+scikit-image

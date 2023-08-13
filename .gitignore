@@ -1,0 +1,9 @@
+*.gif
+*.csv
+__pycache__/
+output/
+clipped/
+*.new
+*.editedA
+*.editedB
+.filebackup/
