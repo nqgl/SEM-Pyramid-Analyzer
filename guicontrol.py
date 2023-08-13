@@ -109,7 +109,7 @@ class GuiControl():
             self.open_image()
         k = -1
         nextmode = None
-        while True:
+        while k != ord("y"):
             if self.mode_function == None:
                 self.mode_function = self.default_mode
             if nextmode is not None:
@@ -136,7 +136,7 @@ class GuiControl():
                 if nextmode is None:
                     self.mode_function(key = k)
 
-        cv2.setMouseCallback("Image Analysis", None)
+        # cv2.setMouseCallback("Image Analysis",    None)
 
     def update_display(self, legend, state):
         self.legend = legend
@@ -461,6 +461,7 @@ def main():
     IA = analysis.ImageAnalysis('437-1-03.tif')
     IA = analysis.ImageAnalysis("242316_01.tif")
     gui = GuiControl()
+    IA = gui.IA
     IA.capture = []
     gui.control_loop()
     import imageio

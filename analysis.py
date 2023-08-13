@@ -65,7 +65,7 @@ class ImageAnalysis():
         img = np.concatenate((img, titlebar, self.guibar), axis = 0)
         cv2.imshow('Image Analysis', img)
         if self.capture is not None:
-            self.capture += [img.copy()] * (frames)
+            self.capture += [img.copy()] *1
         print("show", ms, "ms")
         if ms > 0:
             ms = 1
