@@ -109,7 +109,7 @@ class GuiControl():
             self.open_image()
         k = -1
         nextmode = None
-        while k != ord("y"):
+        while k != ord("y") or self.IA.capture is not None:
             if self.mode_function == None:
                 self.mode_function = self.default_mode
             if nextmode is not None:
